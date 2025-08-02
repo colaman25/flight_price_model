@@ -11,7 +11,6 @@ def train_model(input_path: str, model_path: str):
     # Start SparkSession
     spark = SparkSession.builder \
         .appName("flight_analysis") \
-        .master("local[*]") \
         .getOrCreate()
 
     # Load Data

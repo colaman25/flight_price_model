@@ -8,7 +8,6 @@ def run_prediction(input_path: str, model_path: str, output_path: str):
     # Start SparkSession
     spark = SparkSession.builder \
          .appName("flight_price_pred") \
-         .master("local[*]") \
          .getOrCreate()
 
     # Load Model
